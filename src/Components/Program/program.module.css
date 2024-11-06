@@ -1,0 +1,74 @@
+/* Section Styles */
+.services {
+  width: 100vw;
+  padding: 40px 20px;
+  background-color: #f9f9f9; /* Light background for contrast */
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333; /* Darker text for headings */
+}
+
+/* Programs Container */
+.programs {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  gap: 20px; /* Space between program cards */
+}
+
+/* Program Card Styles */
+.program {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Prevent overflow of content */
+  transition: transform 0.3s, box-shadow 0.3s; /* Animation on hover */
+  width: 350px; /* Fixed width for cards */
+}
+
+.program:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Image Styles */
+.program img {
+  width: 100%; /* Full width of the card */
+  height: 200px; /* Fixed height for images */
+  object-fit: cover; /* Cover the area without distortion */
+}
+
+/* Heading Styles */
+.program h3 {
+  font-size: 1.5rem;
+  margin: 15px 0;
+  color: #4a90e2; /* Primary color for headings */
+}
+
+/* Paragraph Styles */
+.program p {
+  font-size: 1rem;
+  color: #666; /* Gray color for text */
+  padding: 10px 15px 30px 15px;
+}
+
+/* Button Styles */
+.ctaButton {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 10px 20px;
+  background-color: #4a90e2; /* Primary button color */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s; /* Animation on hover */
+}
+
+.ctaButton:hover {
+  background-color: #357abd; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
