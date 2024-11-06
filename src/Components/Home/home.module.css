@@ -44,7 +44,7 @@
 
 .ctaButton {
   margin-top: 20px;
-  width: 20%;
+  min-width: 20%;
   background-color: #2980b9;
   color: white;
   padding: 10px 20px;

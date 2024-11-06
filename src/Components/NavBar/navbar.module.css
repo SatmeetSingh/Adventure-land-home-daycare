@@ -119,6 +119,7 @@ nav {
   .menuOpen {
     display: flex;
     transform: translateY(0); /* Slide menu into view */
+    padding-left: 10px;
   }
 
   /* Menu items */
