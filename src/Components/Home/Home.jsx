@@ -3,7 +3,6 @@ import LocationInformation from '../Enroll/Enroll';
 import FeaturesSection from '../Info/AboutUs';
 import Program from '../Program/Program';
 import styles from './home.module.css';
-// import Footer from '../Footer/Footer';
 
 function Home() {
   return (
@@ -37,7 +36,6 @@ function Home() {
       <Element name="location">
         <LocationInformation />
       </Element>
-      {/* <Footer /> */}
     </>
   );
 }

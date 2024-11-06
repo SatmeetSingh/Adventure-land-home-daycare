@@ -4,6 +4,7 @@ import Home from './Components/Home/Home';
 import Program from './Components/Program/Program';
 import LocationInformation from './Components/Enroll/Enroll';
 import FeaturesSection from './Components/Info/AboutUs';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="programs" element={<Program />} />
           <Route path="location" element={<LocationInformation />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
