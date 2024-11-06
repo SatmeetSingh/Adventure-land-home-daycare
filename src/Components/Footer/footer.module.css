@@ -10,6 +10,7 @@
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
+  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
 }
 
 .contact,
@@ -17,6 +18,8 @@
 .copy {
   flex: 1;
   padding: 10px;
+  min-width: 200px; /* Ensure the sections don't get too narrow */
+  border-bottom: 1px solid #555; /* Add a border between sections */
 }
 
 .contact h4,
@@ -45,4 +48,70 @@ ul li a:hover {
 .copy {
   align-self: flex-end;
   font-size: 0.9rem;
+  margin-top: 20px; /* Adds spacing on smaller screens */
+}
+
+/* Mobile and Tablet responsiveness */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack the sections vertically */
+    text-align: left; /* Align text to the left for readability */
+  }
+
+  .contact,
+  .social,
+  .copy {
+    text-align: center;
+    margin-bottom: 20px; /* Add space between sections */
+    border-bottom: none; /* Remove bottom border on the last section */
+  }
+
+  .contact h4,
+  .social h4 {
+    font-size: 1.1rem; /* Slightly larger header size for smaller screens */
+  }
+
+  .social ul {
+    padding-left: 20px; /* Add padding for better spacing */
+  }
+
+  .copy {
+    font-size: 0.8rem; /* Adjust font size for small screens */
+    margin-bottom: 10px; /* Ensure the copyright text doesn't look cramped */
+  }
+
+  /* Adding lines between sections in mobile */
+  .contact,
+  .social {
+    border-bottom: 1px solid #555; /* Border between sections on mobile */
+  }
+
+  .copy {
+    border-bottom: none; /* No border after the last section */
+  }
+}
+
+/* Mobile-first style for screens smaller than 480px */
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  .contact h4,
+  .social h4 {
+    font-size: 1.1rem; /* Increase font size for smaller screens */
+  }
+
+  .contact p,
+  .social ul li {
+    font-size: 0.9rem; /* Slightly smaller text for better fitting */
+  }
+
+  .social ul {
+    padding-left: 0; /* Remove extra padding for smaller screens */
+  }
+
+  .copy {
+    font-size: 0.75rem; /* Adjust the copyright text font size */
+  }
 }
