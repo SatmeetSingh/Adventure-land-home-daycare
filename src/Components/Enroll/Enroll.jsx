@@ -20,11 +20,11 @@ const LocationInformation = () => {
       <div className={styles.section}>
         <h2 className={styles.title}>Location Information</h2>
         <p className={styles.locationDescription}>
-          Our central location on Kaufman Ave, Eastbrook, provides a convenient
-          and accessible setting for families in the Vaughan area. We are
-          dedicated to offering high-quality care and early education in a warm
-          and welcoming environment that supports the growth and development of
-          children and families alike.
+          "Our central location on Kaufman Ave, Regina, SK, provides a
+          convenient and accessible setting for families in the Regina area. We
+          are dedicated to offering high-quality care and early education in a
+          warm and welcoming environment that supports the growth and
+          development of children and families alike."
         </p>
         <ul className={styles.locationDetails}>
           <li>
